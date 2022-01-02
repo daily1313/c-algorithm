@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int b[1000001];
+int b[1000];
 int main()
 {
 	cin.tie(NULL);
