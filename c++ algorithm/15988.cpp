@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-
+unsigned long long int dp[1000001];
 int main()
 {
-	int dp[10];
+	
 	int t;
 	int i;
 	dp[0] = 1;
@@ -12,18 +12,16 @@ int main()
 	dp[2] = 4;
 	
 	cin>>t;
-	int n;
+	unsigned long long int n;
 	int j;
 	for(j=0;j<t;j++){
 		cin>>n;
 		for(i=3;i<n;i++){
 			dp[i] = dp[i-1]+dp[i-2]+dp[i-3];	
 		}
-		cout<<dp[n-1]<<endl;
+		cout<< dp[n-1] % 1000000009<<endl;
 		
 	}
 	
 	
 }
-
-
